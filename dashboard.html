@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArthSathi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+                 <div class="logo"><img class="img1" src="images/arthsathi.png" alt=""></div>
+             
+            <div>
+                <a class="tag1" href="landingpage.html">Home</a>
+            </div>
+
+            <div>
+                <a class="tag1" href="dashboard.html">Dashboard</a>
+            </div>
+
+        
+
+            <div>
+                <a class="tag1" href="analytics.html">Analytics</a>
+            </div>
+
+            <div class="search-bar">
+  
+           
+                <input id="search" type="text" place >
+                    
+            <div class="icn1" ><i class="fa-solid fa-magnifying-glass"></i></div>
+
+            </div>
+
+            <div>
+                <select  id="filter"  >
+                    <option>All</option>
+                    <option>Food</option>
+                    <option>Shopping</option>
+                    <option>Bills</option>
+                    <option>Travel</option>
+                    <option>Entertainment</option>
+                    <option>Salary</option>
+                    <option>Investment</option>
+                </select>
+            </div>    
+
+           <div>
+            <select id="sortFilter">
+                 <option value="default">Sort By</option>
+                 <option value="date-new">Newest First</option>
+                 <option value="date-old">Oldest First</option>
+                 <option value="amount-high">Amount: High to Low</option>
+                 <option value="amount-low">Amount: Low to High</option>
+            </select>
+            </div>
+
+            <div>
+                <button id="themeToggle">🌙</button>
+            </div>
+
+
+    </div>
+<div class="cards">
+<div class="card"><h3>Income </h3>
+    <p id="p1">Total Income</p>
+    <p id="income">0 ₹</p>
+</div>
+
+<div class="card"><h3>Expense</h3>
+    <p id="p1">Total Expenses</p>
+    <p id="expense">0 ₹</p>
+</div>
+
+<div class="card"><h3>Balance</h3>
+    <p id="p1">Available Balance</p>
+    <p id="balance">0 ₹</p>
+</div>
+
+<div class="card"><h3>Savings</h3>
+    <p id="p1">Money Saved</p>
+    <p id="savings">0 ₹</p>
+</div>
+</div>
+<button class="transaction">Add Transaction +</button>
+
+<div class="transaction-detail">
+    <div class="form-content">
+    <h1 id="form-title">Transaction Details</h1>
+    <form action="">
+        Title <input id="title1" type="text"><br>
+        Amount <input id="amt" type="number"><br>
+        Category <select id="selection">
+                    <option>Food</option>
+                    <option>PocketMoney</option>
+                    <option>Shopping</option>
+                    <option>Bills</option>
+                    <option>Travel</option>
+                    <option>Entertainment</option>
+                    <option>Salary</option>
+                    <option>Investment</option>
+                </select><br>
+        Date <input id="dates" type="date"> <br> 
+        
+       <p>Select Amount Type</p>
+
+<div class="amount-type">
+
+    <label>
+        <input type="radio" name="amttype" value="Income">
+        Income
+    </label>
+
+    <label>
+        <input type="radio" name="amttype" value="Expense">
+        Expense
+    </label>
+
+</div>
+    </form>
+    <div class="formbtns">
+        <button type="button" class="btn1">Add</button>
+        <button type="button" class="btn2">Cancel</button>
+    </div>
+    </div>
+</div>
+<div class="detailoftransaction"></div>
+<div id="toast"></div>
+<script src="script.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

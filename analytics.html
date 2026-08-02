@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArthSathi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="analytics.css">
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="navbar">
+                 <div class="logo"><img class="img1" src="images/arthsathi.png" alt=""></div>
+
+            <div>
+                <a class="tag1" href="landingpage.html">Home</a>
+            </div>
+
+            <div>
+                <a class="tag1" href="dashboard.html">Dashboard</a>
+            </div>
+
+            <!-- <div>
+                <a class="tag1" href="">Transaction</a>
+            </div> -->
+
+            <div>
+                <a class="tag1" href="">Analytics</a>
+            </div>
+
+            <div class="search-bar">
+  
+           
+                <input id="search" type="text" place >
+                    
+            <div class="icn1" ><i class="fa-solid fa-magnifying-glass"></i></div>
+
+            </div>
+
+            <div>
+                <select  id="filter"  >
+                    <option>All</option>
+                    <option>Food</option>
+                    <option>Shopping</option>
+                    <option>Bills</option>
+                    <option>Travel</option>
+                    <option>Entertainment</option>
+                    <option>Salary</option>
+                    <option>Investment</option>
+                </select>
+
+            </div>
+                  <div>
+            <select id="sortFilter">
+              <option value="default">Sort By</option>
+              <option value="date-new">Newest First</option>
+              <option value="date-old">Oldest First</option>
+              <option value="amount-high">Amount: High to Low</option>
+              <option value="amount-low">Amount: Low to High</option>
+           </select>
+           </div>
+           <div>
+                <button id="themeToggle">🌙</button>
+           </div>
+</div>
+</div>
+</header>
+
+
+<div class="chart-box">
+<div class="chart-card">
+    <h2>Expense by Category</h2>
+
+    <div class="chart-container">
+        <canvas id="categoryChart"></canvas>
+    </div>
+</div>
+
+<div class="chart-card">
+    <h2>Monthly Expense Trend</h2>
+
+    <div class="chart-container">
+        <canvas id="monthlyChart"></canvas>
+    </div>
+</div>
+
+<div class="chart-card">
+    <h2>Income vs Expense</h2>
+
+    <div class="chart-container">
+        <canvas id="incomeExpenseChart"></canvas>
+    </div>
+</div>
+
+ <div class="chart-card">
+    <h2>Spending Pattern</h2>
+
+    <div class="chart-container">
+        <canvas id="spendingChart"></canvas>
+    </div>
+</div>
+
+</div>
+
+<script src="analytics.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>
+
